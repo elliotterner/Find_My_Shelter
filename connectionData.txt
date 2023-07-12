@@ -1,0 +1,9 @@
+<?php
+
+$server = "ix.cs.uoregon.edu";
+$dbname ="shelter";
+$user = "FindMyShelter";
+$pass = "FindMyShelter!";
+$port="3561";
+
+?>

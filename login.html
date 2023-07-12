@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<style>
+  /*setting text boxes for username and password*/
+  input[type=uname], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+
+  button {
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  }
+
+  .container {
+  padding: 16px;
+  }
+</style>
+<body>
+    <header>
+      <div class="login">
+        <a href="login.html">Shelter Staff Login</a>
+      </div>
+      <h1 class="top-of-page">Find my Shelter</h1>
+    </header>
+  
+  
+      <!--
+        Top Page Links
+      -->
+      <nav>
+        <ul>
+          <li><a href="findMyShelter.php">Home</a></li>
+          <li><a href="coldWeatherPage.html">Emergency Cold Weather Shelter</a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="contactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+      <form action="TODO.php" method="post">      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="uname" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+              
+          <button type="submit">Login</button>
+        </div>
+      </form>
+</body>
+</html>

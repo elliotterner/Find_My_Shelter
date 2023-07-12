@@ -1,0 +1,379 @@
+/* 
+Name of File: style.css
+Purpose of File: Provides styling for all webpage documents
+Creation date: 03/08/23
+Authors: Entire Team
+*/
+
+/* Sets the font family to Roboto Slab and adds a solid border */
+body {
+  font-family: 'Roboto Slab', serif;
+  border-style: solid;
+}
+
+/* Adds a dark green background color, white text color, and 30px of padding to the top of the 
+page. */
+header {
+  background-color: #007a3e;
+  color: #fff;
+  padding: 30px;
+}
+
+/* Centers the text and removes any margin. */
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+/* Adds a dark red text color and 10px of margin. */
+h2 {
+  color: #7a003c;
+  margin: 10px;
+}
+
+/* Centers the navigation bar, adds 10px of padding, and sets a dark red background color. */
+nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #7a003c;
+}
+
+/* Displays the navigation items as inline-blocks with 40px of margin to the right */
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* Sets the color to light grey and the font size to medium. */
+nav a {
+  color: #cbcbcb;
+  font-size: medium;
+}
+
+/* Adds a dark green background color, white text color, and 7px of padding to the bottom of the 
+page. The text is centered. */
+footer {
+  background-color: #007a3e;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+}
+
+/* Adds a dark green background color to the top of the page. */
+.top-of-page {
+  background-color: #007a3e;
+}
+
+/* Displays the inner content as a row with no margins or padding. */
+.inner {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adds padding, margin, background color, border radius, and box shadow to a box. The position is 
+set to relative and a border is added. The padding and margin at the bottom are duplicated. */
+.box {
+  display: block;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #999;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Adds a vertical line to the left side of the box. */
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 66.666%;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+/* Adds a margin to the right of a class called "requirements". */
+.box .requirements {
+  margin-right: calc(32% + 10px);
+}
+
+/* Styles all spans with the class "id-circle" to create a circle around them with a smaller 
+font size and bold text. It adds spacing between the number and name, sets the width and height 
+to 30px, vertically centers the number, and sets the text color and background color */
+.box .id-circle { /* Adding circle around all spans in box*/
+  display: inline-block;
+  font-size: 16px; /* smaller font size */
+  font-weight: bold;
+  margin-right: 5px; /* add some spacing between the number and name */
+  border-radius: 50%; /* make border a circle */
+  width: 30px; /* set width and height to make circle larger */
+  height: 30px;
+  line-height: 30px; /* vertically center number in circle */
+  text-align: center;
+  color: #fff;
+  background-color: #007a3e;
+}
+
+/* Same as .box .id-circle, but for the class "spots-available". */
+.box .spots-available { /* Adding circle around all spans in box*/
+  display: inline-block;
+  font-size: 16px; /* smaller font size */
+  font-weight: bold;
+  margin-right: 5px; /* add some spacing between the number and name */
+  border-radius: 50%; /* make border a circle */
+  width: 30px; /* set width and height to make circle larger */
+  height: 30px;
+  line-height: 30px; /* vertically center number in circle */
+  text-align: center;
+  color: #fff;
+  background-color: #007a3e;
+}
+
+/* Adds a bold, 24px font size to the name of the box. */
+.box .name {
+  display: inline-block; /* add name to same line */
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Positions the box to the right side of the page and adds padding and align-items. */
+.right-box {
+  position: absolute;
+  top: 10px;
+  left: 66.666%;
+  padding: 10px;
+  align-items: center;
+}
+
+/* Adds a 16px font size, bold text, and 5px margin to the spots element. */
+.spots {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* Adds a 99% width and 2px height horizontal line with a grey background color and a margin of 
+30px. */
+.divider {
+  width: 99%;
+  height: 2px;
+  background-color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Styles the current location element with a 16px font size, a pointer cursor, and margins of 
+10px on the top and 20px on the bottom. */
+.curr-location {
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Aligns the login button to the right of the page. */
+.login {
+  text-align: right;
+}
+
+/* Sets the color of the login button text to white. */
+.login a {
+  color: white;
+}
+
+/* Adds a 16px font size and margins of 10px on the top and 5px on the left to the clear button. */
+#clear-btn {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/* Adds a 16px font size to the search button. */
+#search-btn {
+  font-size: 16px;
+}
+
+/* Styles the text input with a width of 400px, a 16px font size, 10px of padding, and a 10px 
+margin on the top. */
+input[type="text"] {
+  width: 400px; 
+  height: 0px;
+  font-size: 16px; 
+  padding: 10px; 
+  margin-top: 10px;
+}
+
+/* Adds a 16px font size and a pointer cursor to the address search button. */
+button[type="addr-search"]{
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Adds a red background color, white text color, padding, and a font size of 16px to the submit 
+button. It is set to display as an inline-block and has margins of 10px. */
+button[type="submit"] {
+  background-color: #7a003c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Defines the styling of checkboxes, setting their width and height, margin, and vertical 
+alignment. */
+input[type="checkbox"] {
+  width: 14px;
+  height: 20px;
+  margin: 0px 10px 0;
+  vertical-align: middle;
+}
+
+/* Sets the display property of all labels to block. */
+label {
+  display: block;
+}
+
+/* Defines the styling of a sidebar element, setting its width, background color, and padding. */
+#sidebar {
+  width: 300px;
+  background-color: #f1f1f1;
+  padding-bottom: 15px;
+}
+
+/* setting flex property and padding. */
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* setting height to 300px and width to 100%. */
+#map{
+  height: 300px;
+  width: 100%;
+}
+
+/* setting display property to flex. */
+.contact-and-photo {
+  display: flex;
+}
+
+/* setting width and padding-left. */
+.contact-info {
+  width: 50%;
+  padding-left: 40px ;
+}
+
+/* setting width for all photos with class photo-section */
+.photo-section {
+  width: 40%;
+}
+
+/* setting its padding-bottom and padding-right. */
+.location{
+  padding-bottom: 25px;
+  padding-right: 20px;;
+}
+
+/* setting its padding-right to 100px. */
+.desc{
+  padding-right: 100px;
+}
+
+/*  */
+.about-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* Sets the display property of elements with class .contact-and-photo to flex, allowing for 
+flexible item sizing and alignment within the container */
+.contact-and-photo {
+  display: flex;
+}
+
+/* Sets the width property of elements with class .contact-info to 50% of the parent element and 
+adds a left padding of 40 pixels */
+.contact-info {
+  width: 50%;
+  padding-left: 40px ;
+}
+
+/* Sets the maximum width property of elements with class .photo-section to 100% */
+.photo-section {
+  max-width: 100%;
+  overflow: hidden ;
+}
+
+/* Sets the maximum width property of the img element inside elements with class .photo-section to 
+100% */
+.photo-section img{
+  max-width: 100%;
+}
+
+/* Adds a right padding of 100 pixels to elements with class .desc */
+.desc{
+  padding-right: 100px;
+}
+
+/* Sets the maximum width property of elements with class .about-info to 800 pixels, centers them 
+horizontally and sets the text alignment to center. It also sets the font size and line height to 
+1.2em and 1.6em respectively */
+.about-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* Same as about-info but with ColdShelters */
+.ColdShelters{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* Sets the text alignment of all td elements within elements with class .data-table to center */
+.data-table td {
+  text-align: center;
+}
+
+/* Sets the display property of all links within elements with class .data-table to block and hides
+any overflowing content with an ellipsis. It also sets the white space property to nowrap and sets 
+the maximum width to 100 pixels */
+.data-table a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px; 
+}
+
+/* Sets the display property of elements with class .form-container to flex, aligns items to the 
+center vertically and horizontally, and sets the height to 50% of the parent element */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
